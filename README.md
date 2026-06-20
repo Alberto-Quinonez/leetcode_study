@@ -1,6 +1,6 @@
-# LeetCode Practice
+# LeetCode Study
 
-NeetCode 150 — pattern-based study, Go solutions.
+NeetCode 150 — pattern-based study, Python solutions.
 
 ## Goal
 
@@ -30,7 +30,7 @@ Given any problem from the Blind 150: recognize the pattern in <5 min, produce a
 
 ```
 solutions/<pattern>/<NNN_problem_name>/
-  solution.go   # your solution
+  solution.py   # your solution
   notes.md      # pattern, approach, complexity, gotchas
 patterns/       # reference sheets per pattern (fill in as you go)
 mocks/          # mock interview logs
@@ -41,7 +41,7 @@ progress.md     # master checklist
 
 - Problem list: https://neetcode.io/practice (use the NeetCode 150 filter)
 - Video explanations: https://neetcode.io (free)
-- All solutions in Go
+- All solutions in Python
 
 ## Notes Template
 

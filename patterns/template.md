@@ -10,12 +10,16 @@
 
 ## Canonical Templates
 
-<!-- Go code snippets for the most common shapes of this pattern -->
+<!-- Python code snippets for the most common shapes of this pattern -->
 
 ## Complexity Profile
 
 - Time: O(?)
 - Space: O(?)
+
+## Useful Python Built-ins
+
+<!-- Any stdlib modules or builtins particularly relevant to this pattern -->
 
 ## Watch Out For
 

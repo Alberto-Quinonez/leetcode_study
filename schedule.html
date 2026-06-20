@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LeetCode Study Plan — Alberto Quinonez</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 48px 56px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .header {
+      border-bottom: 3px solid #1a1a1a;
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .header .meta {
+      margin-top: 6px;
+      color: #555;
+      font-size: 12px;
+    }
+
+    /* ── Section headings ── */
+    h2 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #1a1a1a;
+      margin: 32px 0 12px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h3 {
+      font-size: 13px;
+      font-weight: 600;
+      margin: 20px 0 8px;
+    }
+
+    p { margin-bottom: 8px; }
+
+    /* ── Goal box ── */
+    .goal {
+      background: #f5f5f5;
+      border-left: 4px solid #1a1a1a;
+      padding: 14px 18px;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 8px;
+    }
+    .goal strong { font-weight: 600; }
+
+    /* ── Phase cards ── */
+    .phases {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+    .phase {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 16px;
+    }
+    .phase-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #888;
+      margin-bottom: 4px;
+    }
+    .phase-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .phase-weeks {
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    .phase ul {
+      padding-left: 16px;
+      font-size: 12px;
+    }
+    .phase ul li { margin-bottom: 4px; }
+
+    /* ── Daily rhythm ── */
+    .rhythm-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .rhythm-box {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 14px 16px;
+    }
+    .rhythm-box .day { font-weight: 600; font-size: 12px; margin-bottom: 6px; }
+    .rhythm-box ol { padding-left: 18px; font-size: 12px; }
+    .rhythm-box ol li { margin-bottom: 3px; }
+
+    /* ── Pattern table ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    th {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: left;
+      padding: 7px 10px;
+      font-weight: 600;
+    }
+    td { padding: 6px 10px; border-bottom: 1px solid #eee; }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #fafafa; }
+    .badge {
+      display: inline-block;
+      padding: 1px 7px;
+      border-radius: 10px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .easy   { background: #d4edda; color: #155724; }
+    .medium { background: #fff3cd; color: #856404; }
+    .hard   { background: #f8d7da; color: #721c24; }
+
+    /* ── Rules box ── */
+    .rules {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .rule-box {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 14px 16px;
+      font-size: 12px;
+    }
+    .rule-box .rule-title { font-weight: 600; margin-bottom: 6px; }
+    .rule-box ul { padding-left: 16px; }
+    .rule-box ul li { margin-bottom: 3px; }
+
+    /* ── Maintenance ── */
+    .maintenance {
+      background: #f5f5f5;
+      border-radius: 6px;
+      padding: 16px 18px;
+      font-size: 12px;
+    }
+    .maintenance ul { padding-left: 18px; margin-top: 6px; }
+    .maintenance ul li { margin-bottom: 4px; }
+
+    /* ── Print ── */
+    @media print {
+      body { padding: 28px 36px; }
+      @page { margin: 0; size: A4; }
+      .phases { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>LeetCode Study Plan</h1>
+    <div class="meta">Alberto Quinonez &nbsp;·&nbsp; Started June 2026 &nbsp;·&nbsp; NeetCode 150 &nbsp;·&nbsp; Go</div>
+  </div>
+
+  <!-- GOAL -->
+  <h2>Goal</h2>
+  <div class="goal">
+    Given any problem from the Blind 150: <strong>recognize the pattern in &lt;5 min</strong>, produce a working solution in <strong>&lt;30 min</strong>, explain time/space complexity clearly, and handle one follow-up.
+  </div>
+  <p style="font-size:12px;color:#555;margin-top:8px;">Why 30 min, not 60? Real interviews are 45–50 min total. After intro and Q&amp;A you have ~30–35 min for the actual problem. Training to 60 min trains you to be slow.</p>
+
+  <!-- PHASES -->
+  <h2>Three Phases</h2>
+  <div class="phases">
+    <div class="phase">
+      <div class="phase-label">Phase 1</div>
+      <div class="phase-title">Pattern Learning</div>
+      <div class="phase-weeks">Weeks 1–20 &nbsp;·&nbsp; ~100 problems</div>
+      <ul>
+        <li>1 problem/day, weekdays only</li>
+        <li>Work patterns in order</li>
+        <li>Easy first, then Medium</li>
+        <li>35-min hard cap — if stuck, read the <em>approach</em> (not code), then retry from scratch</li>
+        <li>Fill out <code>notes.md</code> every time</li>
+        <li>No timer pressure yet</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="phase-label">Phase 2</div>
+      <div class="phase-title">Blind Solving</div>
+      <div class="phase-weeks">Weeks 21–26 &nbsp;·&nbsp; ~50 problems</div>
+      <ul>
+        <li>1 problem/day, weekdays only</li>
+        <li>Pick randomly — no pattern label</li>
+        <li>Strict <strong>30-min cap</strong></li>
+        <li>One mock interview per week</li>
+        <li>45-min timer, talk out loud, no hints</li>
+        <li>Log every mock in <code>mocks/</code></li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="phase-label">Phase 3</div>
+      <div class="phase-title">Maintenance</div>
+      <div class="phase-weeks">Week 27+ &nbsp;·&nbsp; ongoing</div>
+      <ul>
+        <li><strong>3 problems/week</strong>, random, timed</li>
+        <li>One mock per month</li>
+        <li>Revisit weak patterns</li>
+        <li>Sustainable indefinitely</li>
+        <li>Ramp back to Phase 2 cadence when an interview is 4–6 weeks away</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DAILY RHYTHM -->
+  <h2>Daily Rhythm</h2>
+  <div class="rhythm-grid">
+    <div class="rhythm-box">
+      <div class="day">Weekday Problem Session (~60 min)</div>
+      <ol>
+        <li>Read the problem, write out examples by hand (5 min)</li>
+        <li>Identify the pattern — say it out loud or write it down before coding</li>
+        <li>Code the solution, no looking anything up (30–35 min cap)</li>
+        <li>If stuck past the cap: read the approach only, close it, re-implement from scratch</li>
+        <li>Fill out <code>notes.md</code> — pattern name, key insight, complexity, gotchas</li>
+        <li>Commit to git</li>
+      </ol>
+    </div>
+    <div class="rhythm-box">
+      <div class="day">Weekly Mock Interview (~45 min) — Phase 2 only</div>
+      <ol>
+        <li>Pick a random problem (use NeetCode shuffle or a friend)</li>
+        <li>Start 45-min timer</li>
+        <li>Talk through your approach before writing any code</li>
+        <li>Write a working solution</li>
+        <li>State time/space complexity unprompted</li>
+        <li>After timer: fill out mock log in <code>mocks/YYYY-MM-DD.md</code></li>
+        <li>Self-grade 1–5 honestly</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- PATTERN ORDER -->
+  <h2>Pattern Order &amp; Problem Count</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Pattern</th>
+        <th>Problems</th>
+        <th>Mix</th>
+        <th>Hardest Problem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Arrays &amp; Hashing</td><td>9</td><td><span class="badge easy">5E</span> <span class="badge medium">4M</span></td><td>Longest Consecutive Sequence</td></tr>
+      <tr><td>2</td><td>Two Pointers</td><td>5</td><td><span class="badge easy">1E</span> <span class="badge medium">3M</span> <span class="badge hard">1H</span></td><td>Trapping Rain Water</td></tr>
+      <tr><td>3</td><td>Sliding Window</td><td>6</td><td><span class="badge easy">1E</span> <span class="badge medium">3M</span> <span class="badge hard">2H</span></td><td>Sliding Window Maximum</td></tr>
+      <tr><td>4</td><td>Stack</td><td>7</td><td><span class="badge easy">1E</span> <span class="badge medium">5M</span> <span class="badge hard">1H</span></td><td>Largest Rectangle in Histogram</td></tr>
+      <tr><td>5</td><td>Binary Search</td><td>7</td><td><span class="badge easy">1E</span> <span class="badge medium">5M</span> <span class="badge hard">1H</span></td><td>Median of Two Sorted Arrays</td></tr>
+      <tr><td>6</td><td>Linked List</td><td>11</td><td><span class="badge easy">3E</span> <span class="badge medium">6M</span> <span class="badge hard">2H</span></td><td>Reverse Nodes in K-Group</td></tr>
+      <tr><td>7</td><td>Trees</td><td>15</td><td><span class="badge easy">6E</span> <span class="badge medium">7M</span> <span class="badge hard">2H</span></td><td>Serialize &amp; Deserialize Binary Tree</td></tr>
+      <tr><td>8</td><td>Tries</td><td>3</td><td><span class="badge medium">2M</span> <span class="badge hard">1H</span></td><td>Word Search II</td></tr>
+      <tr><td>9</td><td>Heap / Priority Queue</td><td>7</td><td><span class="badge easy">2E</span> <span class="badge medium">4M</span> <span class="badge hard">1H</span></td><td>Find Median from Data Stream</td></tr>
+      <tr><td>10</td><td>Backtracking</td><td>9</td><td><span class="badge medium">8M</span> <span class="badge hard">1H</span></td><td>N-Queens</td></tr>
+      <tr><td>11</td><td>Graphs</td><td>13</td><td><span class="badge medium">12M</span> <span class="badge hard">1H</span></td><td>Word Ladder</td></tr>
+      <tr><td>12</td><td>Advanced Graphs</td><td>6</td><td><span class="badge medium">2M</span> <span class="badge hard">4H</span></td><td>Alien Dictionary</td></tr>
+      <tr><td>13</td><td>1D Dynamic Programming</td><td>12</td><td><span class="badge easy">2E</span> <span class="badge medium">10M</span></td><td>Partition Equal Subset Sum</td></tr>
+      <tr><td>14</td><td>2D Dynamic Programming</td><td>11</td><td><span class="badge medium">7M</span> <span class="badge hard">4H</span></td><td>Regular Expression Matching</td></tr>
+      <tr><td>15</td><td>Greedy</td><td>8</td><td><span class="badge medium">8M</span></td><td>Valid Parenthesis String</td></tr>
+      <tr><td>16</td><td>Intervals</td><td>6</td><td><span class="badge easy">1E</span> <span class="badge medium">4M</span> <span class="badge hard">1H</span></td><td>Minimum Interval to Include Each Query</td></tr>
+      <tr><td>17</td><td>Math &amp; Geometry</td><td>8</td><td><span class="badge easy">2E</span> <span class="badge medium">6M</span></td><td>Multiply Strings</td></tr>
+      <tr><td>18</td><td>Bit Manipulation</td><td>7</td><td><span class="badge easy">5E</span> <span class="badge medium">2M</span></td><td>Sum of Two Integers</td></tr>
+    </tbody>
+  </table>
+
+  <!-- RULES OF THUMB -->
+  <h2>Rules of Thumb</h2>
+  <div class="rules">
+    <div class="rule-box">
+      <div class="rule-title">Do</div>
+      <ul>
+        <li>Write the pattern name <em>before</em> you write any code</li>
+        <li>State complexity unprompted — always, even in practice</li>
+        <li>Commit every solution, even ugly ones</li>
+        <li>Fill out <code>notes.md</code> while the problem is fresh</li>
+        <li>Revisit any problem you needed hints for after 3–5 days</li>
+        <li>Use NeetCode videos after your attempt, not before</li>
+      </ul>
+    </div>
+    <div class="rule-box">
+      <div class="rule-title">Don't</div>
+      <ul>
+        <li>Look at the solution before your 35-min cap expires</li>
+        <li>Skip <code>notes.md</code> when you solved it easily — those insights are still worth recording</li>
+        <li>Do multiple problems in one sitting to "catch up" — consistency beats bursts</li>
+        <li>Jump to Hard problems before the pattern is solid</li>
+        <li>Grind random problems — stick to the pattern order until Phase 2</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MAINTENANCE -->
+  <h2>Maintenance Mode (Phase 3)</h2>
+  <div class="maintenance">
+    <strong>The goal of maintenance is to keep pattern recognition sharp without making this a second job.</strong>
+    <ul>
+      <li>3 problems/week on any schedule that fits — doesn't have to be weekdays</li>
+      <li>Always timed (30-min cap). No relaxed practice in maintenance mode</li>
+      <li>Rotate through all 18 patterns over time — don't get comfortable only doing your strong patterns</li>
+      <li>When an interview is 4–6 weeks out, ramp back to Phase 2 cadence (1/day + weekly mocks)</li>
+    </ul>
+  </div>
+
+  <!-- RESOURCES -->
+  <h2>Resources</h2>
+  <table>
+    <thead><tr><th>Resource</th><th>What it's for</th></tr></thead>
+    <tbody>
+      <tr><td>neetcode.io/practice</td><td>Problem list — use the NeetCode 150 filter</td></tr>
+      <tr><td>neetcode.io (videos)</td><td>Watch after your attempt if you needed hints</td></tr>
+      <tr><td>leetcode.com</td><td>Submit and run your solutions</td></tr>
+      <tr><td><code>patterns/</code> in your repo</td><td>Your own reference sheets — fill one in per pattern as you complete it</td></tr>
+      <tr><td><code>mocks/</code> in your repo</td><td>Mock interview logs — be honest in self-grades</td></tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

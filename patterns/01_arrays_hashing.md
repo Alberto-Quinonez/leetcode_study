@@ -7,49 +7,51 @@ Trade space for time. Use a hash map to turn O(n²) lookup problems into O(n) by
 ## When to Reach for This
 
 - "Find two elements that satisfy a condition" → store complement while scanning
-- "Count frequency of elements" → `map[T]int`
-- "Detect duplicates" → `map[T]struct{}`
-- "Group elements by some property" → `map[key][]T`
+- "Count frequency of elements" → `Counter` or `defaultdict(int)`
+- "Detect duplicates" → `set`
+- "Group elements by some property" → `defaultdict(list)`
 
 ## Canonical Templates
 
 **Complement lookup (Two Sum style)**
-```go
-seen := make(map[int]int) // value → index
-for i, n := range nums {
-    if j, ok := seen[target-n]; ok {
-        return []int{j, i}
-    }
+```python
+seen = {}
+for i, n in enumerate(nums):
+    if target - n in seen:
+        return [seen[target - n], i]
     seen[n] = i
-}
 ```
 
 **Frequency count**
-```go
-freq := make(map[byte]int)
-for _, c := range s {
-    freq[c]++
-}
+```python
+from collections import Counter
+freq = Counter(s)  # or Counter(nums)
 ```
 
 **Grouping**
-```go
-groups := make(map[string][]string)
-for _, word := range words {
-    key := sortString(word) // or some canonical form
-    groups[key] = append(groups[key], word)
-}
+```python
+from collections import defaultdict
+groups = defaultdict(list)
+for word in words:
+    key = tuple(sorted(word))  # or some canonical form
+    groups[key].append(word)
 ```
 
 ## Complexity Profile
 
-- Time: O(n) for a single pass with O(1) map ops
+- Time: O(n) for a single pass with O(1) hash ops
 - Space: O(n) for the map
+
+## Useful Python Built-ins
+
+- `collections.Counter` — frequency map in one line
+- `collections.defaultdict` — map with a default value, avoids key existence checks
+- `set` — O(1) membership test, use for duplicate detection
 
 ## Watch Out For
 
-- Map lookup returns zero-value if key is missing — use the two-value form `v, ok := m[k]`
-- When the problem asks for indices, store index as the value, not the element
+- `dict.get(key, default)` to avoid KeyError when key may be missing
+- When the problem asks for indices, store the index as the value, not the element
 - Sorted arrays let you skip the map entirely (use two pointers instead)
 
 ## Problems in This Group
@@ -57,10 +59,10 @@ for _, word := range words {
 | # | Problem | Key Trick |
 |---|---------|-----------|
 | 001 | Two Sum | complement map |
-| 002 | Contains Duplicate | existence set |
-| 003 | Valid Anagram | frequency diff |
-| 004 | Group Anagrams | sorted key as group identifier |
-| 005 | Top K Frequent Elements | freq map + bucket sort or heap |
+| 002 | Contains Duplicate | set membership |
+| 003 | Valid Anagram | Counter comparison |
+| 004 | Group Anagrams | sorted tuple as group key |
+| 005 | Top K Frequent Elements | Counter + heapq or bucket sort |
 | 006 | Encode and Decode Strings | length-prefix encoding |
 | 007 | Product of Array Except Self | prefix + suffix products, no division |
 | 008 | Valid Sudoku | row/col/box sets |
