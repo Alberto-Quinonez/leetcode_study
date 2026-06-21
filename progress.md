@@ -6,187 +6,206 @@
 ---
 
 ## Arrays & Hashing (0/9)
-- [ ] 001 · Two Sum *(Easy)*
-- [ ] 002 · Contains Duplicate *(Easy)*
-- [ ] 003 · Valid Anagram *(Easy)*
-- [ ] 004 · Group Anagrams *(Medium)*
-- [ ] 005 · Top K Frequent Elements *(Medium)*
-- [ ] 006 · Encode and Decode Strings *(Medium)*
-- [ ] 007 · Product of Array Except Self *(Medium)*
-- [ ] 008 · Valid Sudoku *(Medium)*
-- [ ] 009 · Longest Consecutive Sequence *(Medium)*
+
+- [x] 001 · Two Sum _(Easy)_
+- [x] 002 · Contains Duplicate _(Easy)_
+- [ ] 003 · Valid Anagram _(Easy)_
+- [ ] 004 · Group Anagrams _(Medium)_
+- [ ] 005 · Top K Frequent Elements _(Medium)_
+- [ ] 006 · Encode and Decode Strings _(Medium)_
+- [ ] 007 · Product of Array Except Self _(Medium)_
+- [ ] 008 · Valid Sudoku _(Medium)_
+- [ ] 009 · Longest Consecutive Sequence _(Medium)_
 
 ## Two Pointers (0/5)
-- [ ] 010 · Valid Palindrome *(Easy)*
-- [ ] 011 · Two Sum II — Input Array Is Sorted *(Medium)*
-- [ ] 012 · 3Sum *(Medium)*
-- [ ] 013 · Container With Most Water *(Medium)*
-- [ ] 014 · Trapping Rain Water *(Hard)*
+
+- [ ] 010 · Valid Palindrome _(Easy)_
+- [ ] 011 · Two Sum II — Input Array Is Sorted _(Medium)_
+- [ ] 012 · 3Sum _(Medium)_
+- [ ] 013 · Container With Most Water _(Medium)_
+- [ ] 014 · Trapping Rain Water _(Hard)_
 
 ## Sliding Window (0/6)
-- [ ] 015 · Best Time to Buy and Sell Stock *(Easy)*
-- [ ] 016 · Longest Substring Without Repeating Characters *(Medium)*
-- [ ] 017 · Longest Repeating Character Replacement *(Medium)*
-- [ ] 018 · Permutation in String *(Medium)*
-- [ ] 019 · Minimum Window Substring *(Hard)*
-- [ ] 020 · Sliding Window Maximum *(Hard)*
+
+- [ ] 015 · Best Time to Buy and Sell Stock _(Easy)_
+- [ ] 016 · Longest Substring Without Repeating Characters _(Medium)_
+- [ ] 017 · Longest Repeating Character Replacement _(Medium)_
+- [ ] 018 · Permutation in String _(Medium)_
+- [ ] 019 · Minimum Window Substring _(Hard)_
+- [ ] 020 · Sliding Window Maximum _(Hard)_
 
 ## Stack (0/7)
-- [ ] 021 · Valid Parentheses *(Easy)*
-- [ ] 022 · Min Stack *(Medium)*
-- [ ] 023 · Evaluate Reverse Polish Notation *(Medium)*
-- [ ] 024 · Generate Parentheses *(Medium)*
-- [ ] 025 · Daily Temperatures *(Medium)*
-- [ ] 026 · Car Fleet *(Medium)*
-- [ ] 027 · Largest Rectangle in Histogram *(Hard)*
+
+- [ ] 021 · Valid Parentheses _(Easy)_
+- [ ] 022 · Min Stack _(Medium)_
+- [ ] 023 · Evaluate Reverse Polish Notation _(Medium)_
+- [ ] 024 · Generate Parentheses _(Medium)_
+- [ ] 025 · Daily Temperatures _(Medium)_
+- [ ] 026 · Car Fleet _(Medium)_
+- [ ] 027 · Largest Rectangle in Histogram _(Hard)_
 
 ## Binary Search (0/7)
-- [ ] 028 · Binary Search *(Easy)*
-- [ ] 029 · Search a 2D Matrix *(Medium)*
-- [ ] 030 · Koko Eating Bananas *(Medium)*
-- [ ] 031 · Find Minimum in Rotated Sorted Array *(Medium)*
-- [ ] 032 · Search in Rotated Sorted Array *(Medium)*
-- [ ] 033 · Time Based Key-Value Store *(Medium)*
-- [ ] 034 · Median of Two Sorted Arrays *(Hard)*
+
+- [ ] 028 · Binary Search _(Easy)_
+- [ ] 029 · Search a 2D Matrix _(Medium)_
+- [ ] 030 · Koko Eating Bananas _(Medium)_
+- [ ] 031 · Find Minimum in Rotated Sorted Array _(Medium)_
+- [ ] 032 · Search in Rotated Sorted Array _(Medium)_
+- [ ] 033 · Time Based Key-Value Store _(Medium)_
+- [ ] 034 · Median of Two Sorted Arrays _(Hard)_
 
 ## Linked List (0/11)
-- [ ] 035 · Reverse Linked List *(Easy)*
-- [ ] 036 · Merge Two Sorted Lists *(Easy)*
-- [ ] 037 · Linked List Cycle *(Easy)*
-- [ ] 038 · Reorder List *(Medium)*
-- [ ] 039 · Remove Nth Node From End of List *(Medium)*
-- [ ] 040 · Copy List with Random Pointer *(Medium)*
-- [ ] 041 · Add Two Numbers *(Medium)*
-- [ ] 042 · Find the Duplicate Number *(Medium)*
-- [ ] 043 · LRU Cache *(Medium)*
-- [ ] 044 · Merge K Sorted Lists *(Hard)*
-- [ ] 045 · Reverse Nodes in K-Group *(Hard)*
+
+- [ ] 035 · Reverse Linked List _(Easy)_
+- [ ] 036 · Merge Two Sorted Lists _(Easy)_
+- [ ] 037 · Linked List Cycle _(Easy)_
+- [ ] 038 · Reorder List _(Medium)_
+- [ ] 039 · Remove Nth Node From End of List _(Medium)_
+- [ ] 040 · Copy List with Random Pointer _(Medium)_
+- [ ] 041 · Add Two Numbers _(Medium)_
+- [ ] 042 · Find the Duplicate Number _(Medium)_
+- [ ] 043 · LRU Cache _(Medium)_
+- [ ] 044 · Merge K Sorted Lists _(Hard)_
+- [ ] 045 · Reverse Nodes in K-Group _(Hard)_
 
 ## Trees (0/15)
-- [ ] 046 · Invert Binary Tree *(Easy)*
-- [ ] 047 · Maximum Depth of Binary Tree *(Easy)*
-- [ ] 048 · Diameter of Binary Tree *(Easy)*
-- [ ] 049 · Balanced Binary Tree *(Easy)*
-- [ ] 050 · Same Tree *(Easy)*
-- [ ] 051 · Subtree of Another Tree *(Easy)*
-- [ ] 052 · Lowest Common Ancestor of BST *(Medium)*
-- [ ] 053 · Binary Tree Level Order Traversal *(Medium)*
-- [ ] 054 · Binary Tree Right Side View *(Medium)*
-- [ ] 055 · Count Good Nodes in Binary Tree *(Medium)*
-- [ ] 056 · Validate Binary Search Tree *(Medium)*
-- [ ] 057 · Kth Smallest Element in BST *(Medium)*
-- [ ] 058 · Construct Binary Tree from Preorder and Inorder Traversal *(Medium)*
-- [ ] 059 · Binary Tree Maximum Path Sum *(Hard)*
-- [ ] 060 · Serialize and Deserialize Binary Tree *(Hard)*
+
+- [ ] 046 · Invert Binary Tree _(Easy)_
+- [ ] 047 · Maximum Depth of Binary Tree _(Easy)_
+- [ ] 048 · Diameter of Binary Tree _(Easy)_
+- [ ] 049 · Balanced Binary Tree _(Easy)_
+- [ ] 050 · Same Tree _(Easy)_
+- [ ] 051 · Subtree of Another Tree _(Easy)_
+- [ ] 052 · Lowest Common Ancestor of BST _(Medium)_
+- [ ] 053 · Binary Tree Level Order Traversal _(Medium)_
+- [ ] 054 · Binary Tree Right Side View _(Medium)_
+- [ ] 055 · Count Good Nodes in Binary Tree _(Medium)_
+- [ ] 056 · Validate Binary Search Tree _(Medium)_
+- [ ] 057 · Kth Smallest Element in BST _(Medium)_
+- [ ] 058 · Construct Binary Tree from Preorder and Inorder Traversal _(Medium)_
+- [ ] 059 · Binary Tree Maximum Path Sum _(Hard)_
+- [ ] 060 · Serialize and Deserialize Binary Tree _(Hard)_
 
 ## Tries (0/3)
-- [ ] 061 · Implement Trie *(Medium)*
-- [ ] 062 · Design Add and Search Words Data Structure *(Medium)*
-- [ ] 063 · Word Search II *(Hard)*
+
+- [ ] 061 · Implement Trie _(Medium)_
+- [ ] 062 · Design Add and Search Words Data Structure _(Medium)_
+- [ ] 063 · Word Search II _(Hard)_
 
 ## Heap / Priority Queue (0/7)
-- [ ] 064 · Kth Largest Element in a Stream *(Easy)*
-- [ ] 065 · Last Stone Weight *(Easy)*
-- [ ] 066 · K Closest Points to Origin *(Medium)*
-- [ ] 067 · Kth Largest Element in an Array *(Medium)*
-- [ ] 068 · Task Scheduler *(Medium)*
-- [ ] 069 · Design Twitter *(Medium)*
-- [ ] 070 · Find Median from Data Stream *(Hard)*
+
+- [ ] 064 · Kth Largest Element in a Stream _(Easy)_
+- [ ] 065 · Last Stone Weight _(Easy)_
+- [ ] 066 · K Closest Points to Origin _(Medium)_
+- [ ] 067 · Kth Largest Element in an Array _(Medium)_
+- [ ] 068 · Task Scheduler _(Medium)_
+- [ ] 069 · Design Twitter _(Medium)_
+- [ ] 070 · Find Median from Data Stream _(Hard)_
 
 ## Backtracking (0/9)
-- [ ] 071 · Subsets *(Medium)*
-- [ ] 072 · Combination Sum *(Medium)*
-- [ ] 073 · Permutations *(Medium)*
-- [ ] 074 · Subsets II *(Medium)*
-- [ ] 075 · Combination Sum II *(Medium)*
-- [ ] 076 · Word Search *(Medium)*
-- [ ] 077 · Palindrome Partitioning *(Medium)*
-- [ ] 078 · Letter Combinations of a Phone Number *(Medium)*
-- [ ] 079 · N-Queens *(Hard)*
+
+- [ ] 071 · Subsets _(Medium)_
+- [ ] 072 · Combination Sum _(Medium)_
+- [ ] 073 · Permutations _(Medium)_
+- [ ] 074 · Subsets II _(Medium)_
+- [ ] 075 · Combination Sum II _(Medium)_
+- [ ] 076 · Word Search _(Medium)_
+- [ ] 077 · Palindrome Partitioning _(Medium)_
+- [ ] 078 · Letter Combinations of a Phone Number _(Medium)_
+- [ ] 079 · N-Queens _(Hard)_
 
 ## Graphs (0/13)
-- [ ] 080 · Number of Islands *(Medium)*
-- [ ] 081 · Max Area of Island *(Medium)*
-- [ ] 082 · Clone Graph *(Medium)*
-- [ ] 083 · Walls and Gates *(Medium)*
-- [ ] 084 · Rotting Oranges *(Medium)*
-- [ ] 085 · Pacific Atlantic Water Flow *(Medium)*
-- [ ] 086 · Surrounded Regions *(Medium)*
-- [ ] 087 · Course Schedule *(Medium)*
-- [ ] 088 · Course Schedule II *(Medium)*
-- [ ] 089 · Graph Valid Tree *(Medium)*
-- [ ] 090 · Number of Connected Components in an Undirected Graph *(Medium)*
-- [ ] 091 · Redundant Connection *(Medium)*
-- [ ] 092 · Word Ladder *(Hard)*
+
+- [ ] 080 · Number of Islands _(Medium)_
+- [ ] 081 · Max Area of Island _(Medium)_
+- [ ] 082 · Clone Graph _(Medium)_
+- [ ] 083 · Walls and Gates _(Medium)_
+- [ ] 084 · Rotting Oranges _(Medium)_
+- [ ] 085 · Pacific Atlantic Water Flow _(Medium)_
+- [ ] 086 · Surrounded Regions _(Medium)_
+- [ ] 087 · Course Schedule _(Medium)_
+- [ ] 088 · Course Schedule II _(Medium)_
+- [ ] 089 · Graph Valid Tree _(Medium)_
+- [ ] 090 · Number of Connected Components in an Undirected Graph _(Medium)_
+- [ ] 091 · Redundant Connection _(Medium)_
+- [ ] 092 · Word Ladder _(Hard)_
 
 ## Advanced Graphs (0/6)
-- [ ] 093 · Reconstruct Itinerary *(Hard)*
-- [ ] 094 · Min Cost to Connect All Points *(Medium)*
-- [ ] 095 · Network Delay Time *(Medium)*
-- [ ] 096 · Swim in Rising Water *(Hard)*
-- [ ] 097 · Alien Dictionary *(Hard)*
-- [ ] 098 · Cheapest Flights Within K Stops *(Medium)*
+
+- [ ] 093 · Reconstruct Itinerary _(Hard)_
+- [ ] 094 · Min Cost to Connect All Points _(Medium)_
+- [ ] 095 · Network Delay Time _(Medium)_
+- [ ] 096 · Swim in Rising Water _(Hard)_
+- [ ] 097 · Alien Dictionary _(Hard)_
+- [ ] 098 · Cheapest Flights Within K Stops _(Medium)_
 
 ## 1D Dynamic Programming (0/12)
-- [ ] 099 · Climbing Stairs *(Easy)*
-- [ ] 100 · Min Cost Climbing Stairs *(Easy)*
-- [ ] 101 · House Robber *(Medium)*
-- [ ] 102 · House Robber II *(Medium)*
-- [ ] 103 · Longest Palindromic Substring *(Medium)*
-- [ ] 104 · Palindromic Substrings *(Medium)*
-- [ ] 105 · Decode Ways *(Medium)*
-- [ ] 106 · Coin Change *(Medium)*
-- [ ] 107 · Maximum Product Subarray *(Medium)*
-- [ ] 108 · Word Break *(Medium)*
-- [ ] 109 · Longest Increasing Subsequence *(Medium)*
-- [ ] 110 · Partition Equal Subset Sum *(Medium)*
+
+- [ ] 099 · Climbing Stairs _(Easy)_
+- [ ] 100 · Min Cost Climbing Stairs _(Easy)_
+- [ ] 101 · House Robber _(Medium)_
+- [ ] 102 · House Robber II _(Medium)_
+- [ ] 103 · Longest Palindromic Substring _(Medium)_
+- [ ] 104 · Palindromic Substrings _(Medium)_
+- [ ] 105 · Decode Ways _(Medium)_
+- [ ] 106 · Coin Change _(Medium)_
+- [ ] 107 · Maximum Product Subarray _(Medium)_
+- [ ] 108 · Word Break _(Medium)_
+- [ ] 109 · Longest Increasing Subsequence _(Medium)_
+- [ ] 110 · Partition Equal Subset Sum _(Medium)_
 
 ## 2D Dynamic Programming (0/11)
-- [ ] 111 · Unique Paths *(Medium)*
-- [ ] 112 · Longest Common Subsequence *(Medium)*
-- [ ] 113 · Best Time to Buy and Sell Stock with Cooldown *(Medium)*
-- [ ] 114 · Coin Change II *(Medium)*
-- [ ] 115 · Target Sum *(Medium)*
-- [ ] 116 · Interleaving String *(Medium)*
-- [ ] 117 · Longest Increasing Path in a Matrix *(Hard)*
-- [ ] 118 · Distinct Subsequences *(Hard)*
-- [ ] 119 · Edit Distance *(Medium)*
-- [ ] 120 · Burst Balloons *(Hard)*
-- [ ] 121 · Regular Expression Matching *(Hard)*
+
+- [ ] 111 · Unique Paths _(Medium)_
+- [ ] 112 · Longest Common Subsequence _(Medium)_
+- [ ] 113 · Best Time to Buy and Sell Stock with Cooldown _(Medium)_
+- [ ] 114 · Coin Change II _(Medium)_
+- [ ] 115 · Target Sum _(Medium)_
+- [ ] 116 · Interleaving String _(Medium)_
+- [ ] 117 · Longest Increasing Path in a Matrix _(Hard)_
+- [ ] 118 · Distinct Subsequences _(Hard)_
+- [ ] 119 · Edit Distance _(Medium)_
+- [ ] 120 · Burst Balloons _(Hard)_
+- [ ] 121 · Regular Expression Matching _(Hard)_
 
 ## Greedy (0/8)
-- [ ] 122 · Maximum Subarray *(Medium)*
-- [ ] 123 · Jump Game *(Medium)*
-- [ ] 124 · Jump Game II *(Medium)*
-- [ ] 125 · Gas Station *(Medium)*
-- [ ] 126 · Hand of Straights *(Medium)*
-- [ ] 127 · Merge Triplets to Form Target Triplet *(Medium)*
-- [ ] 128 · Partition Labels *(Medium)*
-- [ ] 129 · Valid Parenthesis String *(Medium)*
+
+- [ ] 122 · Maximum Subarray _(Medium)_
+- [ ] 123 · Jump Game _(Medium)_
+- [ ] 124 · Jump Game II _(Medium)_
+- [ ] 125 · Gas Station _(Medium)_
+- [ ] 126 · Hand of Straights _(Medium)_
+- [ ] 127 · Merge Triplets to Form Target Triplet _(Medium)_
+- [ ] 128 · Partition Labels _(Medium)_
+- [ ] 129 · Valid Parenthesis String _(Medium)_
 
 ## Intervals (0/6)
-- [ ] 130 · Insert Interval *(Medium)*
-- [ ] 131 · Merge Intervals *(Medium)*
-- [ ] 132 · Non-Overlapping Intervals *(Medium)*
-- [ ] 133 · Meeting Rooms *(Easy)*
-- [ ] 134 · Meeting Rooms II *(Medium)*
-- [ ] 135 · Minimum Interval to Include Each Query *(Hard)*
+
+- [ ] 130 · Insert Interval _(Medium)_
+- [ ] 131 · Merge Intervals _(Medium)_
+- [ ] 132 · Non-Overlapping Intervals _(Medium)_
+- [ ] 133 · Meeting Rooms _(Easy)_
+- [ ] 134 · Meeting Rooms II _(Medium)_
+- [ ] 135 · Minimum Interval to Include Each Query _(Hard)_
 
 ## Math & Geometry (0/8)
-- [ ] 136 · Rotate Image *(Medium)*
-- [ ] 137 · Spiral Matrix *(Medium)*
-- [ ] 138 · Set Matrix Zeroes *(Medium)*
-- [ ] 139 · Happy Number *(Easy)*
-- [ ] 140 · Plus One *(Easy)*
-- [ ] 141 · Pow(x, n) *(Medium)*
-- [ ] 142 · Multiply Strings *(Medium)*
-- [ ] 143 · Detect Squares *(Medium)*
+
+- [ ] 136 · Rotate Image _(Medium)_
+- [ ] 137 · Spiral Matrix _(Medium)_
+- [ ] 138 · Set Matrix Zeroes _(Medium)_
+- [ ] 139 · Happy Number _(Easy)_
+- [ ] 140 · Plus One _(Easy)_
+- [ ] 141 · Pow(x, n) _(Medium)_
+- [ ] 142 · Multiply Strings _(Medium)_
+- [ ] 143 · Detect Squares _(Medium)_
 
 ## Bit Manipulation (0/7)
-- [ ] 144 · Single Number *(Easy)*
-- [ ] 145 · Number of 1 Bits *(Easy)*
-- [ ] 146 · Counting Bits *(Easy)*
-- [ ] 147 · Reverse Bits *(Easy)*
-- [ ] 148 · Missing Number *(Easy)*
-- [ ] 149 · Sum of Two Integers *(Medium)*
-- [ ] 150 · Reverse Integer *(Medium)*
+
+- [ ] 144 · Single Number _(Easy)_
+- [ ] 145 · Number of 1 Bits _(Easy)_
+- [ ] 146 · Counting Bits _(Easy)_
+- [ ] 147 · Reverse Bits _(Easy)_
+- [ ] 148 · Missing Number _(Easy)_
+- [ ] 149 · Sum of Two Integers _(Medium)_
+- [ ] 150 · Reverse Integer _(Medium)_
+
